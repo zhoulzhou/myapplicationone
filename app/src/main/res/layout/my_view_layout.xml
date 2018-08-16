@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+<com.example.zhou.selfview.MyView
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#ff0000"
+    myView:default_color="@color/black">
+
+</com.example.zhou.selfview.MyView>
+</LinearLayout>
