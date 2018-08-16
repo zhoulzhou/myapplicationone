@@ -15,6 +15,7 @@ import com.example.zhou.mutilthread.Producer;
 import com.example.zhou.mutilthread.Rabbit;
 import com.example.zhou.mutilthread.Station;
 import com.example.zhou.mutilthread.Tortoise;
+import com.example.zhou.recycleview.DividerItemDecoration;
 import com.example.zhou.recycleview.NormalRecyclerViewAdapter;
 
 import java.util.concurrent.BlockingQueue;
@@ -37,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
 //        mRecyclerView.setLayoutManager(new GridLayoutManager(this,2));
 //        mRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(2, OrientationHelper.VERTICAL));
         mRecyclerView.setAdapter(new NormalRecyclerViewAdapter(this));
+        mRecyclerView.addItemDecoration(new DividerItemDecoration(this,
+                DividerItemDecoration.VERTICAL_LIST));
     }
 
     public void race(){
